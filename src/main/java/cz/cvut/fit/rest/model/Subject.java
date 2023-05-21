@@ -51,4 +51,8 @@ public class Subject {
     public Student deleteStudent(Integer id) {
         return students.remove(id);
     }
+
+    public void updateStudent(Student student) {
+        students.replace(student.getId(), student);
+    }
 }
